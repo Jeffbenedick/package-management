@@ -30,11 +30,11 @@ echo "end on tomcat installation"
 
 #Tomcat server configuration:
 find / -name server.xml context.xml
-vim /opt/tomcat9/conf/server.xml
+vim /opt/tomcat9/conf/server.xml(Vi into file to change port access from 8080 to 7000)
 vi /opt/tomcat9/webapps/manager/META-INF/context.xml (add xml comment <!-- and -->)
 vi /opt/tomcat9/conf/tomcat-user.xml  # to add user
 
-	<user username="landmark" password="admin" roles="manager-gui,admin-gui"/>
+	<user username="landmark" password="admin" roles="manager-gui,admin-gui,manager-script"/>
 	
 
 /opt/tomcat9/conf/context.xml
