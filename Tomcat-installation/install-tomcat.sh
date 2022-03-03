@@ -17,7 +17,7 @@ sudo tar -xvf apache-tomcat-9.0.58.tar.gz
 sudo rm apache-tomcat-9.0.58.tar.gz
 
 sudo chmod 777 -R /opt/tomcat9
-sudo sh /opt/tomcat9/bin/startup.sh
+sudo sh /opt/tomcat9/bin/startup.sh (This is the absolute path)
 # create a soft link to start and stop tomcat from anywhere 
 sudo ln -s /opt/tomcat10/bin/startup.sh /usr/bin/starttomcat
 sudo ln -s /opt/tomcat10/bin/shutdown.sh /usr/bin/stoptomcat
